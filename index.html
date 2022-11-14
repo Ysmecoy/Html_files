@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Employee Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+    <header>
+      <h1 id="title">Employee Satisfaction Survey</h1>
+      <p id="description">This survey is intended to give the management guidance to improve the workplace environment</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <label for="employee-name" id="name-label" type="text" name="name">Name: 
+          <input id="name" type="text" name="name" required placeholder="Your Name here ..."/>
+        </label>
+        <label for="employee-email" id="email-label" type="email" name="email">Email: 
+          <input id="email" type="email" name="email" required placeholder="email here..."/>
+        </label>
+        <label for="employee-number" id="number-label" type="number" name="number">Years of Service: 
+          <input id="number" type="number" name="number" min="0" max="50" required placeholder="Enter a number"/>
+        </label>
+      </fieldset>
+      <fieldset>
+         <label for="employee-benefit" id="benefits"> Select what you want more from your workplace
+          <select id="dropdown" name="dropdown">
+            <option type="checkbox" value="">select one<option>
+            <option type="checkbox" value="1">Benefits<option>
+            <option type="checkbox" value="2">Training<option>
+            <option type="checkbox" value="3">Job Security<option>
+          </select>
+         </label>
+       </fieldset>
+       <fieldset>
+         <label for=" purchasing-department"><input id="purchasing-department" type="radio" name="department" class="inline" value="1" /> Purchasing Department</label>
+        <label for="it-department"><input id="it-department" type="radio" name="department" class="inline" value="2"/>IT department</label>
+        <label for="Sale-department"><input id="sale-department" type="radio" name="department" class="inline" value="3" />Sale department</label>
+        <label for="terms-conditions"><input id="terms-conditions" type="checkbox" name="terms-conditions" value="1" class="inline"/>Terms and Conditions</label>
+        <label for="privacy-agreement"><input id="privacy-agreement" type="checkbox" name="privacy-agreement" value="2" class="inline"/>Privacy Agreement</label>
+      </fieldset> 
+      <fieldset>
+        <label for="opinion">Sugestion to improve the workplace:
+          <textarea id="opinion" name="opinion" rows="5" cols="30" placeholder="Please be specific about what you think should be implemented or changed"></textarea>
+        </label>
+   </fieldset>
+      <input type="submit" value="submit" id="submit" />
+    </form>
+    </body>
+</html>
